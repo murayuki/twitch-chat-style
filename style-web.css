@@ -1,0 +1,31 @@
+/**
+ * Remove the header section
+ * 刪除標題部分
+*/
+.stream-chat .stream-chat-header { 
+	display: none!important;
+}
+
+/**
+ * Remove the footer section
+ * 刪除頁腳部分
+*/
+.stream-chat .chat-input {
+	display: none!important;
+}
+
+/**
+ * Remove Donation ranking section
+ * 刪除 捐贈排行部分
+*/
+.channel-leaderboard-marquee, .channel-leaderboard-marquee-rotating {
+	display: none!important;
+}
+
+/**
+ * Remove Betting / Voting
+ * 刪除 賭盤/投票
+*/
+.community-highlight-stack__scroll-area--disable {
+	display: none!important;
+}
