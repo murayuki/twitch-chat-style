@@ -1,0 +1,48 @@
+/**
+ * Change font color for all user and system names and messages, add text shadow and make background transparent
+ * 改變所有用戶和系統名稱及信息的字體顏色，添加文字陰影並使背景透明化
+*/
+body, .chat-room, .chat-line__moderation, .chat-line__status, .chat-line__message, .chat-author__display-name {
+	color: #FFFFFF!important;
+	margin: 0 auto!important;
+	overflow: hidden!important;
+	font-weight: bold!important;
+	font-size: 16px!important;
+	text-shadow:
+		-1px -1px 1px #000000,
+		-1px  1px 1px #000000,
+		1px -1px 1px #000000,
+		1px  1px 1px #000000!important;
+	background-color: rgba(0,0,0,0)!important;
+}
+/**
+ * Remove the header section
+ * 刪除標題部分
+*/
+.stream-chat .stream-chat-header { 
+	display: none!important;
+}
+
+/**
+ * Remove the footer section
+ * 刪除頁腳部分
+*/
+.stream-chat .chat-input {
+	display: none!important;
+}
+
+/**
+ * Remove Donation ranking section
+ * 刪除 捐贈排行部分
+*/
+.channel-leaderboard-marquee, .channel-leaderboard-marquee-rotating {
+	display: none!important;
+}
+
+/**
+ * Remove Betting / Voting
+ * 刪除 賭盤/投票
+*/
+.community-highlight-stack__scroll-area--disable {
+	display: none!important;
+}
