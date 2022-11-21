@@ -1,4 +1,26 @@
-/**
+/* ----------------------------------------
+ * General Settings
+ * ---------------------------------------- */
+ body {
+    background-color: rgba(24,24,24,.33) !important;
+    overflow: hidden;
+}
+.tw-root--theme-light, 
+.tw-root--theme-dark,
+.tw-c-background-base,
+.tw-c-background-alt,
+.tw-c-background-alt-2,
+.stream-chat, 
+.chat-room {
+    background-color: transparent !important;
+}
+
+/* ----------------------------------------
+ * Remove the header, scrollbar and footer section
+ * ---------------------------------------- 
+*/
+
+/*
  * Remove the header section
  * 刪除標題部分
 */
@@ -6,7 +28,7 @@
 	display: none!important;
 }
 
-/**
+/*
  * Remove the footer section
  * 刪除頁腳部分
 */
@@ -14,7 +36,7 @@
 	display: none!important;
 }
 
-/**
+/*
  * Remove Donation ranking section
  * 刪除 捐贈排行部分
 */
@@ -22,10 +44,83 @@
 	display: none!important;
 }
 
-/**
+/*
  * Remove Betting / Voting
  * 刪除 賭盤/投票
 */
 .community-highlight-stack__scroll-area--disable {
 	display: none!important;
 }
+
+/* ----------------------------------------
+ * Chat Container Spacing
+ * ---------------------------------------- */
+ .chat-list {
+    padding: 20px;
+    padding-bottom: 10px;
+}
+.chat-line__status,
+.chat-line__moderation, 
+.chat-line__message {
+    padding: 8px 6px !important;
+}
+
+/* ----------------------------------------
+ * Chat Font Size, Color
+ * CSS-Based Outside Stroke: https://www.petercarrero.com/examples/stroke/
+ * ---------------------------------------- */
+
+ /*
+ * Remove Welcome Message
+*/
+.chat-line__status[data-a-target="chat-welcome-message"] {
+    display: none;
+}
+
+.user-notice-line--highlighted,
+.user-notice-line {
+	background-color: rgba(255,255,255,.5) !important;
+    border-left-color: #a970ff;
+	color: #fff !important;
+}
+.bghctT {
+	color: #fff !important;
+}
+.chat-line__status,
+.chat-line__moderation, 
+.chat-line__message,
+.user-notice-line,
+.channel-points-reward-line {
+    font-family: 'Microsoft JhengHei';
+}
+.chat-line__status,
+.chat-line__moderation, 
+.chat-line__message {
+    font-size: 14px !important;
+    line-height: 16px !important;
+    letter-spacing: 1px !important;
+}
+.user-notice-line p,
+.channel-points-reward-line {
+    font-size: 14px !important;
+    line-height: 16px !important;
+    letter-spacing: 1px !important;
+}
+.chat-line__status,
+.chat-line__moderation, 
+.chat-line__message {
+    color: #fff !important;
+}
+.chat-author__display-name {
+    font-size: 14px !important;
+    line-height: 16px !important;
+    letter-spacing: 1px !important;
+}
+
+a {
+    color: #0fa5e5 !important;
+}
+.chat-author__intl-login {
+    opacity: 1;
+}
+
